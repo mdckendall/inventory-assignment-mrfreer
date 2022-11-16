@@ -4,8 +4,8 @@
       "name": "Add item",
       "setup": "javac Main.java",
       "run": "java -classpath .:target/dependency/* Main",
-      "input": "1\r\nA\r\n1\r\n2\r\n4\r\n5\r\n",
-      "output": "Press 1 to add an item.\r\nPress 2 to delete an item.\r\nPress 3 to update an item.\r\nPress 4 to show all the items.\r\nPress 5 to quit the program.\r\nEnter the name:\r\nEnter the serial number:\r\nEnter the value in dollars (whole number):\r\nA,1,2",
+      "input": "1\r\n5\r\n1\r\n2\r\n4\r\n5\r\n",
+      "output": "Press 1 to add an item.\r\nPress 2 to delete an item.\r\nPress 3 to update an item.\r\nPress 4 to show all the items.\r\nPress 5 to quit the program.\r\nEnter the name:\r\nEnter the serial number:\r\nEnter the value in dollars (whole number):\r\n5,1,2",
       "comparison": "included",
       "timeout": 10,
       "points": null
