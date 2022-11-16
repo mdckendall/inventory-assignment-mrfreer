@@ -19,6 +19,7 @@ class Inventory {
 class Main {
 	public static void main(String[] args) {
 		ArrayList<Inventory> arrayList = new ArrayList<>();
+		Scanner scan = new Scanner(System.in);
 		// add items
 		// delete items
 		// update items
@@ -30,7 +31,6 @@ class Main {
 			System.out.println("Press 3 to update an item.");
 			System.out.println("Press 4 to show all the items.");
 			System.out.println("Press 5 to quit the program.");
-			Scanner scan = new Scanner(System.in);
 			String input = scan.next();
 			scan.nextLine();
 			switch (input) {
