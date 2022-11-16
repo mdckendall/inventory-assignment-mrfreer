@@ -31,10 +31,10 @@ class Main {
 			System.out.println("Press 3 to update an item.");
 			System.out.println("Press 4 to show all the items.");
 			System.out.println("Press 5 to quit the program.");
-			String input = scan.next();
+			int input = scan.nextInt();
 			scan.nextLine();
 			switch (input) {
-				case "1":
+				case 1:
 					System.out.println("Enter the name:");
 					String n = scan.nextLine();
 					System.out.println("Enter the serial number:");
@@ -43,7 +43,7 @@ class Main {
 					String v = scan.next();
 					arrayList.add(new Inventory(n, s, v));
 					break;
-				case "2":
+				case 2:
 					System.out.println("Enter the serial number of the item to delete:");
 					String its = scan.next();
 					for (int i = 0; i < arrayList.size(); i++) {
@@ -52,7 +52,7 @@ class Main {
 						}
 					}
 					break;
-				case "3":
+				case 3:
 					System.out.println("Enter the serial number of the item to change:");
 					String st = scan.next();
 					scan.nextLine();
@@ -67,12 +67,12 @@ class Main {
 						}
 					}
 					break;
-				case "4":
+				case 4:
 					for(Inventory i : arrayList){
 						System.out.println(i);
 					}
 					break;
-				case "5":
+				case 5:
 					System.exit(0);
 			}
 		}
