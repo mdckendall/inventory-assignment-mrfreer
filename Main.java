@@ -14,7 +14,7 @@ class Inventory {
 	public String toString() {
 		return name + "," + serialNumber + "," + value;
 	}
-}
+} //why is this???
 
 class Main {
 	public static void main(String[] args) {
