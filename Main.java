@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-
+//testing
 class Inventory {
 	public String name, serialNumber;
 	int value;
