@@ -14,7 +14,7 @@ class Inventory {
 	public String toString() {
 		return name + "," + serialNumber + "," + value;
 	}
-} //why is this??? what is happening! have i not been updating?
+} //why is this??? what is happening! have i not been updating? what is the problem?
 
 class Main {
 	public static void main(String[] args) {
