@@ -4,7 +4,7 @@ import java.util.Scanner;
 class Inventory {
 	public String name, serialNumber;
 	int value;
-
+//test
 	public Inventory(String name, String serialNumber, int value) {
 		this.name = name;
 		this.serialNumber = serialNumber;
