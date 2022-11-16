@@ -3,9 +3,9 @@ import java.util.Scanner;
 //testing
 class Inventory {
 	public String name, serialNumber;
-	int value;
+	String value;
 //test
-	public Inventory(String name, String serialNumber, int value) {
+	public Inventory(String name, String serialNumber, String value) {
 		this.name = name;
 		this.serialNumber = serialNumber;
 		this.value = value;
@@ -31,19 +31,19 @@ class Main {
 			System.out.println("Press 4 to show all the items.");
 			System.out.println("Press 5 to quit the program.");
 			Scanner scan = new Scanner(System.in);
-			int input = scan.nextInt();
+			String input = scan.next();
 			scan.nextLine();
 			switch (input) {
-				case 1:
+				case "1":
 					System.out.println("Enter the name:");
 					String n = scan.nextLine();
 					System.out.println("Enter the serial number:");
 					String s = scan.next();
 					System.out.println("Enter the value in dollars (whole number):");
-					int v = scan.nextInt();
+					String v = scan.next();
 					arrayList.add(new Inventory(n, s, v));
 					break;
-				case 2:
+				case "2":
 					System.out.println("Enter the serial number of the item to delete:");
 					String its = scan.next();
 					for (int i = 0; i < arrayList.size(); i++) {
@@ -52,7 +52,7 @@ class Main {
 						}
 					}
 					break;
-				case 3:
+				case "3":
 					System.out.println("Enter the serial number of the item to change:");
 					String st = scan.next();
 					scan.nextLine();
@@ -61,18 +61,18 @@ class Main {
 							System.out.println("Enter the new name:");
 							String na = scan.nextLine();
 							System.out.println("Enter the new value in dollars (whole number):");
-							int va = scan.nextInt();
+							String va = scan.next();
 							arrayList.get(i).name = na;
 							arrayList.get(i).value = va;
 						}
 					}
 					break;
-				case 4:
+				case "4":
 					for(Inventory i : arrayList){
 						System.out.println(i);
 					}
 					break;
-				case 5:
+				case "5":
 					System.exit(0);
 			}
 		}
